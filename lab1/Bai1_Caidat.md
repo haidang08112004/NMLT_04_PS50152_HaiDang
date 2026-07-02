@@ -1,1 +1,1 @@
-![Hình chụp màn hình đã kết nối github](image-1.png)
+![Hình ảnh đã kết nối với GitHub](image.png)
