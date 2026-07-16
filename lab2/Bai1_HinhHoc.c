@@ -1,29 +1,30 @@
 #include <stdio.h>
+#define PI 3.14159
 
 int main() {
-    int namSinh;
-    float diemTB;
-    char hoten[50], mssv[50];
+    int chieuDai, chieuRong, banKinh;
+    printf("Nhap vao chieu dai hinh chu nhat: ");
+    scanf("%d", &chieuDai);
+    printf("Nhap vao chieu rong hinh chu nhat: ");
+    scanf("%d", &chieuRong);
 
-    printf("Nhap vao ma so sinh vien: ");
-    scanf("%s", mssv);
-
-    printf("Nhap vao ho ten sinh vien: ");
-    scanf(" %[^\n]", hoten);
-
-    printf("Nhap vao nam sinh: ");
-    scanf("%d", &namSinh);
-
-    printf("Nhap vao diem trung binh: ");
-    scanf("%f", &diemTB);
-
-    printf("");
-    printf("\nThong tin sinh vien:\n");
-    printf("Ma so sinh vien: %s\n", mssv);
-    printf("Ten sinh vien: %s\n", hoten);
-    printf("Nam sinh: %d\n", namSinh);
-    printf("Tuoi: %d\n", 2026 - namSinh);
-    printf("Diem trung binh: %.1f\n", diemTB);
-
-    return 0;
+    
+    int chuViHCN = 2 * (chieuDai + chieuRong);
+    printf("Chu vi hinh chu nhat: %d\n", chuViHCN);
+    
+    int dienTichHCN = chieuDai * chieuRong;
+    printf("Dien tich hinh chu nhat: %d\n", dienTichHCN);
+    
+    printf("\n");
+    
+    printf("Nhap vao ban kinh hinh tron: ");
+    scanf("%d", &banKinh);
+    
+    double chuViHT = 2 * PI * banKinh;
+    printf("Chu vi hinh tron: %.2f\n", chuViHT);
+    
+    double dienTichHT = PI * banKinh * banKinh;
+    printf("Dien tich hinh tron: %.2f\n", dienTichHT);
+     
+    
 }
