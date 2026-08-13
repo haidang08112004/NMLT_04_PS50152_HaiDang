@@ -10,6 +10,12 @@ int findMax(int a, int b, int c) {
         return c;
 }
 
+int findMin(int a, int b, int c){
+    if( a < b && a < c)
+        return a;
+    else if (b < c && b < )
+
+}
 int checkYear(int year) {
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
         return 1;
